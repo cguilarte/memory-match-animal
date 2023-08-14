@@ -12,8 +12,8 @@ const NavBar = () => {
             </div>
 
             <div className="flex space-x-4 mt-4 sm:mt-0">
-                <ItemScore label="Aciertos" total={totalHits} color='green' />
-                <ItemScore label="Errores" total={totalErrors} color='red' />
+                <ItemScore label="Aciertos" total={totalHits} color="green" />
+                <ItemScore label="Errores" total={totalErrors} color="red" />
             </div>
         </div>
     )

@@ -20,6 +20,7 @@ function Home() {
 
   useEffect(() => {
     if (verifyAuth()) router.push('/game');
+    nameUser.current.focus();
   }, []);
 
 
