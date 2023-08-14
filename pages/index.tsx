@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
-import { setUserToken, verifyAuth } from '../helpers'
-import ButtonAction from "../components/ButtonAction";
+import { setUserToken, verifyAuth } from '../lib/helpers'
+import ButtonAction from "../components/UI/ButtonAction/ButtonAction";
 
 function Home() {
   const router = useRouter();
@@ -38,7 +38,6 @@ function Home() {
 
               {error && <p className="mt-0 text-sm text-red-600 dark:text-red-500"><span className="font-medium">Oops!</span> Ingrese su nombre para iniciar el juego!</p>}
               <ButtonAction title='Empezar juego' onClick={handleInitPlay} />
-
             </div>
           </div>
         </div>

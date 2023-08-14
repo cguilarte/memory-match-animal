@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/index.js", "helpers/index.js"  ],
+, "pages/index.tsx", "helpers/index.js", "lib/GameContext.tsx", "lib/helpers.js", "constants/index.js"  ],
   "exclude": [
     "node_modules"
   ]
