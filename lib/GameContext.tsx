@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from "react";
-import { imagesService, verifyAuth } from "./helpers";
+import { imagesService } from "../services/imagenService";
+import { verifyAuth } from '../lib/utils'
 import { useRouter } from "next/router";
 
 export const GameContext = createContext({

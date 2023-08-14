@@ -1,5 +1,5 @@
 import Winning from "../components/Winning/Winning";
-import { imagesService } from '../lib/helpers'
+import { imagesService } from '../services/imagenService';
 import NavBar from "../components/NavBar/NavBar";
 import { DataProvider } from "../lib/GameContext";
 import GameBoard from "../components/GameBoard/GameBoard";

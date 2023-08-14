@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Lottie from "lottie-react";
 import confetti from '../../public/images/confetti.json'
-import { getUserToken } from '../../lib/helpers';
+import { getUserToken } from '../../lib/utils';
 import ButtonAction from '../UI/ButtonAction/ButtonAction';
 import GameContext from '../../lib/GameContext';
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
-import { setUserToken, verifyAuth } from '../lib/helpers'
+import { setUserToken, verifyAuth } from '../lib/utils'
 import ButtonAction from "../components/UI/ButtonAction/ButtonAction";
 
 function Home() {
