@@ -36,6 +36,7 @@ export const DataProvider = ({ images, children }) => {
         settotalHits(0);
         settotalErrors(0);
         setListImages(await imagesService());
+        setHitSuccess(false);
     }
 
 
