@@ -18,6 +18,12 @@ function Home() {
     router.push('/game');
   }
 
+  const handleEnterInput = (e) => {
+    if (e.key === 'Enter') {
+      handleInitPlay();
+    }
+  }
+
   useEffect(() => {
     if (verifyAuth()) router.push('/game');
     nameUser.current.focus();
@@ -35,7 +41,7 @@ function Home() {
           <h2 className="text__gradient_secundary text-2xl sm:text-5xl font-semibold font-Lilita">Match Animal</h2>
           <div className="mt-6">
             <div className="mb-6 flex justify-center flex-col items-center space-y-4">
-              <input onKeyUpCapture={() => setError(false)} ref={nameUser} type="text" placeholder="Ingrese su nombre" className=" block font-Lilita w-80 placeholder:text-center text-center p-4 text-gray-900 border-none rounded-lg bg-white sm:text-md focus:outline focus:ring-4 focus:ring-[#FDC632] focus:border-[#FDC632] " />
+              <input onKeyUpCapture={() => setError(false)} onKeyUp={handleEnterInput} ref={nameUser} type="text" placeholder="Ingrese su nombre" className=" block font-Lilita w-80 placeholder:text-center text-center p-4 text-gray-900 border-none rounded-lg bg-white sm:text-md focus:outline focus:ring-4 focus:ring-[#FDC632] focus:border-[#FDC632] " />
 
               {error && <p className="mt-0 text-sm text-red-600 dark:text-red-500"><span className="font-medium">Oops!</span> Ingrese su nombre para iniciar el juego!</p>}
               <ButtonAction title='Empezar juego' onClick={handleInitPlay} />

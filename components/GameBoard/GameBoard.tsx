@@ -8,7 +8,7 @@ const GameBoard = () => {
     const { listImages, hitsSuccess } = useContext(GameContext)
     let isInclude = false;
     return (
-        <div className="grid grid-cols-3 smx:grid-cols-5 md:grid-cols-6 gap-4 md:gap-6 mt-10 pb-10">
+        <div className="grid px-4  grid-cols-3 smx:grid-cols-5 md:grid-cols-6 gap-4 md:gap-6 mt-10 pb-10">
             {listImages.map((item, index) => (
                 <Card
                     key={index}
